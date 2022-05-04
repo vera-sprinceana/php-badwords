@@ -1,0 +1,12 @@
+body{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(243, 243, 236);
+}
+h1{
+    text-align: center;
+}
+img{
+    float: left;
+    margin: 10px 15px 15px 0;
+}
