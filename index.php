@@ -29,7 +29,7 @@ disse Amy risolutamente. — Mamma non ha detto nulla riguardo ai nostri
 risparmi e suppongo che non sarebbe contenta se ci privassimo di tutto
 quello che ci può far piacere. Comperiamoci quello che desideriamo e
 divertiamoci un po’; mi pare che lavoriamo abbastanza per meritarcelo! —';
-$_GET['name'];
+$parolaDaCesurare=$_GET['name'];
 $censure='***';
 ?>
 <!DOCTYPE html>
@@ -49,9 +49,10 @@ $censure='***';
         alt="">
     <p><?php echo $paragrafo ?></p>
     <h4>La lunghezza del paragrafo è :<?php echo strlen($paragrafo) ?></h4>
-    <div><?php $paragrafo=str_replace($_GET, $censure, $paragrafo) ?></div>
+    <div><?php $paragrafo=str_replace($parolaDaCesurare, $censure, $paragrafo) ?></div>
     <p><?php echo $paragrafo ?></p>
     <h4>La nuova lunghezza del paragrafo è: <?php echo strlen($paragrafo) ?></h4>
+
 </body>
 
 </html>
